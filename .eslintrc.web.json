@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier/standard"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "react-native"
+  ],
+  "rules": {
+    "react/prop-types":"off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react-native/no-single-element-style-arrays": 2,
+    "no-use-before-define":"off",
+    "linebreak-style":"off",
+    "max-lines": [
+      "error",
+      500
+    ],
+    "filename-rules/match": [
+      2,
+      "camelCase"
+    ],
+    "react/jsx-pascal-case": [
+      2,
+      {
+        "allowAllCaps": true
+      }
+    ]
+  }
+}
